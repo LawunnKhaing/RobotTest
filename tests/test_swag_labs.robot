@@ -11,7 +11,7 @@ ${PASSWORD}    secret_sauce
 
 *** Test Cases ***
 Swag Labs Purchase Flow
-    Open Browser    ${URL}    firefox
+    Open Browser    ${URL}    headlesschrome
     Maximize Browser Window
     Input Text    id=username    ${USERNAME}
     Input Text    id=password    ${PASSWORD}
