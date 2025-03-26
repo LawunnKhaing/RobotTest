@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.2 on linux)" generated="2025-03-26T10:50:23.203763" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Swag Labs" source="/home/lawunn/PycharmProjects/RobotTest/tests/test_swag_labs.robot">
+<test id="s1-t1" name="Swag Labs Purchase Flow" line="13">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-26T10:50:23.499066" level="INFO">Opening browser 'firefox' to base url 'https://your_username.github.io/your_repo/swag_labs.html'.</msg>
+<arg>${URL}</arg>
+<arg>firefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-26T10:50:23.498223" elapsed="4.739642"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-03-26T10:50:28.238779" elapsed="0.400660"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-26T10:50:28.641426" level="INFO">Typing text 'standard_user' into text field 'id=username'.</msg>
+<msg time="2025-03-26T10:50:28.744418" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-03-26T10:50:28.744795" level="FAIL">Element with locator 'id=username' not found.</msg>
+<arg>id=username</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2025-03-26T10:50:28.640012" elapsed="0.108598">Element with locator 'id=username' not found.</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id=password</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-03-26T10:50:28.749208" elapsed="0.000122"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>id=login-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-03-26T10:50:28.749790" elapsed="0.000094"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=products-grid</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2025-03-26T10:50:28.750279" elapsed="0.000094"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>xpath=(//button[contains(text(), 'Add to Cart')])[1]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-03-26T10:50:28.750756" elapsed="0.000091"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>xpath=(//button[contains(text(), 'Add to Cart')])[2]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-03-26T10:50:28.751182" elapsed="0.000100"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath=//div[contains(@class,'cart-icon')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-03-26T10:50:28.751635" elapsed="0.000087"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=checkout-page</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2025-03-26T10:50:28.752138" elapsed="0.000088"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>xpath=(//button[contains(text(), 'Remove')])[1]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-03-26T10:50:28.752581" elapsed="0.000080"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id=first-name</arg>
+<arg>Alice</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-03-26T10:50:28.752992" elapsed="0.000086"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id=last-name</arg>
+<arg>Tester</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-03-26T10:50:28.753437" elapsed="0.000084"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id=postal-code</arg>
+<arg>12345</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-03-26T10:50:28.753841" elapsed="0.000082"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>xpath=//button[contains(text(), 'Complete Purchase')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-03-26T10:50:28.754263" elapsed="0.000084"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Thank You For Your Order!</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2025-03-26T10:50:28.754684" elapsed="0.000087"/>
+</kw>
+<status status="FAIL" start="2025-03-26T10:50:23.495969" elapsed="5.259447">Element with locator 'id=username' not found.</status>
+</test>
+<kw name="Close All Browsers" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-03-26T10:50:28.757350" elapsed="1.553821"/>
+</kw>
+<status status="FAIL" start="2025-03-26T10:50:23.205220" elapsed="7.106206"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Test Swag Labs" id="s1" pass="0" fail="1" skip="0">Test Swag Labs</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
