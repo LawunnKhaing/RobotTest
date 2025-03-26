@@ -1,112 +1,120 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.2 on linux)" generated="2025-03-26T10:50:23.203763" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2.2 (Python 3.13.2 on linux)" generated="2025-03-26T10:57:11.705173" rpa="false" schemaversion="5">
 <suite id="s1" name="Test Swag Labs" source="/home/lawunn/PycharmProjects/RobotTest/tests/test_swag_labs.robot">
 <test id="s1-t1" name="Swag Labs Purchase Flow" line="13">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-03-26T10:50:23.499066" level="INFO">Opening browser 'firefox' to base url 'https://your_username.github.io/your_repo/swag_labs.html'.</msg>
+<msg time="2025-03-26T10:57:11.986855" level="INFO">Opening browser 'firefox' to base url 'https://lawunnkhaing.github.io/RobotTest/swag_labs.html'.</msg>
 <arg>${URL}</arg>
 <arg>firefox</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-03-26T10:50:23.498223" elapsed="4.739642"/>
+<status status="PASS" start="2025-03-26T10:57:11.986165" elapsed="4.999398"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-03-26T10:50:28.238779" elapsed="0.400660"/>
+<status status="PASS" start="2025-03-26T10:57:16.986400" elapsed="0.288073"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-03-26T10:50:28.641426" level="INFO">Typing text 'standard_user' into text field 'id=username'.</msg>
-<msg time="2025-03-26T10:50:28.744418" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2025-03-26T10:50:28.744795" level="FAIL">Element with locator 'id=username' not found.</msg>
+<msg time="2025-03-26T10:57:17.275897" level="INFO">Typing text 'standard_user' into text field 'id=username'.</msg>
 <arg>id=username</arg>
 <arg>${USERNAME}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="FAIL" start="2025-03-26T10:50:28.640012" elapsed="0.108598">Element with locator 'id=username' not found.</status>
+<status status="PASS" start="2025-03-26T10:57:17.274956" elapsed="0.221494"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-26T10:57:17.497447" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
 <arg>id=password</arg>
 <arg>${PASSWORD}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-03-26T10:50:28.749208" elapsed="0.000122"/>
+<status status="PASS" start="2025-03-26T10:57:17.496873" elapsed="0.033351"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-03-26T10:57:17.531151" level="INFO">Clicking button 'id=login-button'.</msg>
 <arg>id=login-button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-03-26T10:50:28.749790" elapsed="0.000094"/>
+<status status="PASS" start="2025-03-26T10:57:17.530740" elapsed="0.254896"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>id=products-grid</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="NOT RUN" start="2025-03-26T10:50:28.750279" elapsed="0.000094"/>
+<status status="PASS" start="2025-03-26T10:57:17.786224" elapsed="0.995407"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-03-26T10:57:18.782492" level="INFO">Clicking button 'xpath=(//button[contains(text(), 'Add to Cart')])[1]'.</msg>
 <arg>xpath=(//button[contains(text(), 'Add to Cart')])[1]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-03-26T10:50:28.750756" elapsed="0.000091"/>
+<status status="PASS" start="2025-03-26T10:57:18.782063" elapsed="0.245291"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-03-26T10:57:19.028437" level="INFO">Clicking button 'xpath=(//button[contains(text(), 'Add to Cart')])[2]'.</msg>
 <arg>xpath=(//button[contains(text(), 'Add to Cart')])[2]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-03-26T10:50:28.751182" elapsed="0.000100"/>
+<status status="PASS" start="2025-03-26T10:57:19.027876" elapsed="0.272613"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-26T10:57:19.301698" level="INFO">Clicking element 'xpath=//div[contains(@class,'cart-icon')]'.</msg>
 <arg>xpath=//div[contains(@class,'cart-icon')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-03-26T10:50:28.751635" elapsed="0.000087"/>
+<status status="PASS" start="2025-03-26T10:57:19.301062" elapsed="0.222345"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>id=checkout-page</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="NOT RUN" start="2025-03-26T10:50:28.752138" elapsed="0.000088"/>
+<status status="PASS" start="2025-03-26T10:57:19.523893" elapsed="0.025160"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-03-26T10:57:19.550070" level="INFO">Clicking button 'xpath=(//button[contains(text(), 'Remove')])[1]'.</msg>
 <arg>xpath=(//button[contains(text(), 'Remove')])[1]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-03-26T10:50:28.752581" elapsed="0.000080"/>
+<status status="PASS" start="2025-03-26T10:57:19.549582" elapsed="0.255095"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-26T10:57:19.805461" level="INFO">Typing text 'Alice' into text field 'id=first-name'.</msg>
 <arg>id=first-name</arg>
 <arg>Alice</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-03-26T10:50:28.752992" elapsed="0.000086"/>
+<status status="PASS" start="2025-03-26T10:57:19.805071" elapsed="0.031821"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-26T10:57:19.837827" level="INFO">Typing text 'Tester' into text field 'id=last-name'.</msg>
 <arg>id=last-name</arg>
 <arg>Tester</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-03-26T10:50:28.753437" elapsed="0.000084"/>
+<status status="PASS" start="2025-03-26T10:57:19.837312" elapsed="0.090895"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-26T10:57:19.929323" level="INFO">Typing text '12345' into text field 'id=postal-code'.</msg>
 <arg>id=postal-code</arg>
 <arg>12345</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-03-26T10:50:28.753841" elapsed="0.000082"/>
+<status status="PASS" start="2025-03-26T10:57:19.928763" elapsed="0.036629"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-03-26T10:57:19.966159" level="INFO">Clicking button 'xpath=//button[contains(text(), 'Complete Purchase')]'.</msg>
 <arg>xpath=//button[contains(text(), 'Complete Purchase')]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-03-26T10:50:28.754263" elapsed="0.000084"/>
+<status status="PASS" start="2025-03-26T10:57:19.965801" elapsed="0.278134"/>
 </kw>
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>Thank You For Your Order!</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="NOT RUN" start="2025-03-26T10:50:28.754684" elapsed="0.000087"/>
+<status status="PASS" start="2025-03-26T10:57:20.244338" elapsed="0.012685"/>
 </kw>
-<status status="FAIL" start="2025-03-26T10:50:23.495969" elapsed="5.259447">Element with locator 'id=username' not found.</status>
+<status status="PASS" start="2025-03-26T10:57:11.984266" elapsed="8.273178"/>
 </test>
 <kw name="Close All Browsers" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" start="2025-03-26T10:50:28.757350" elapsed="1.553821"/>
+<status status="PASS" start="2025-03-26T10:57:20.258543" elapsed="1.429957"/>
 </kw>
-<status status="FAIL" start="2025-03-26T10:50:23.205220" elapsed="7.106206"/>
+<status status="PASS" start="2025-03-26T10:57:11.706711" elapsed="9.982060"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Test Swag Labs" id="s1" pass="0" fail="1" skip="0">Test Swag Labs</stat>
+<stat name="Test Swag Labs" id="s1" pass="1" fail="0" skip="0">Test Swag Labs</stat>
 </suite>
 </statistics>
 <errors>

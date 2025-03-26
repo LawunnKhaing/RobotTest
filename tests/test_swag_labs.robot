@@ -5,7 +5,7 @@ Library           SeleniumLibrary
 Suite Teardown    Close All Browsers
 
 *** Variables ***
-${URL}    https://your_username.github.io/your_repo/swag_labs.html
+${URL}    https://lawunnkhaing.github.io/RobotTest/swag_labs.html
 ${USERNAME}    standard_user
 ${PASSWORD}    secret_sauce
 
